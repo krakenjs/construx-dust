@@ -1,18 +1,18 @@
-# construx-star
+# construx-dust
 
-Lead Maintainer: [star](star)
+Lead Maintainer: [Matt Edelman](https://github.com/grawk)
 
-[![Build Status](https://travis-ci.org/krakenjs/construx-star.svg?branch=master)](https://travis-ci.org/krakenjs/construx-star)
-[![NPM version](https://badge.fury.io/js/construx-star.png)](http://badge.fury.io/js/construx-star)
+[![Build Status](https://travis-ci.org/krakenjs/construx-dust.svg?branch=master)](https://travis-ci.org/krakenjs/construx-dust)
+[![NPM version](https://badge.fury.io/js/construx-dust.png)](http://badge.fury.io/js/construx-dust)
 
-[construx](https://github.com/krakenjs/construx) plugin for JIT-compiling star resources during development of [express](http://expressjs.com/) applications.
+[construx](https://github.com/krakenjs/construx) plugin for JIT-compiling dust resources during development of [express](http://expressjs.com/) applications.
 
 ## Usage
 
 ### Install
 
 ```shell
-$ npm install --save-dev construx-star
+$ npm install --save-dev construx-dust
 ```
 
 ### Configure
@@ -21,10 +21,12 @@ Where you configure your construx plugins:
 
 ```json
 {
-    "star": {
-        "module": "construx-star",
-        "files": "/star/**/*.compiled",
-    }
+  "template": {
+    "module": "construx-dust",
+    "files": "/templates/**/*.js",
+    "base": "templates",
+    "i18n": "config:i18n"
+  }
 }
 ```
 
