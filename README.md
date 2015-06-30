@@ -7,6 +7,10 @@ Lead Maintainer: [Matt Edelman](https://github.com/grawk)
 
 [construx](https://github.com/krakenjs/construx) plugin for JIT-compiling dustjs resources during development of [express](http://expressjs.com/) applications.
 
+## Requirements
+
+`construx-dustjs` requires your project to have `dustjs-linkedin@2.7.2` installed.
+
 ## Usage
 
 ### Install
