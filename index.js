@@ -17,23 +17,21 @@
  \*───────────────────────────────────────────────────────────────────────────*/
 'use strict';
 
+var lib = require('dustjs-linkedin');
+
 
 module.exports = function (options) {
 
-    options.ext = options.ext || 'less';
-    options.dumpLineNumbers = 'comments';
+    options.ext = options.ext || 'dust';
+
 
     return function (data, args, callback) {
-        var star = data.toString('utf8');
-        var paths = args.paths;
-        var name = args.context.name;
 
-        if (star === 'good') {
-            callback(null, 'star');
-        } else {
-            callback(new Error('Bad star file'));
+        try {
+            callback(null, lib.compile(data.toString('utf8'), args.context.name));
+        } catch (err) {
+            callback(err);
         }
-
     };
 
 };
