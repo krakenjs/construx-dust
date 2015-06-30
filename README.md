@@ -1,18 +1,18 @@
-# construx-dust
+# construx-dustjs
 
 Lead Maintainer: [Matt Edelman](https://github.com/grawk)
 
-[![Build Status](https://travis-ci.org/krakenjs/construx-dust.svg?branch=master)](https://travis-ci.org/krakenjs/construx-dust)
-[![NPM version](https://badge.fury.io/js/construx-dust.png)](http://badge.fury.io/js/construx-dust)
+[![Build Status](https://travis-ci.org/krakenjs/construx-dustjs.svg?branch=master)](https://travis-ci.org/krakenjs/construx-dustjs)
+[![NPM version](https://badge.fury.io/js/construx-dustjs.png)](http://badge.fury.io/js/construx-dustjs)
 
-[construx](https://github.com/krakenjs/construx) plugin for JIT-compiling dust resources during development of [express](http://expressjs.com/) applications.
+[construx](https://github.com/krakenjs/construx) plugin for JIT-compiling dustjs resources during development of [express](http://expressjs.com/) applications.
 
 ## Usage
 
 ### Install
 
 ```shell
-$ npm install --save-dev construx-dust
+$ npm install --save-dev construx-dustjs
 ```
 
 ### Configure
@@ -22,7 +22,7 @@ Where you configure your construx plugins:
 ```json
 {
   "template": {
-    "module": "construx-dust",
+    "module": "construx-dustjs",
     "files": "/templates/**/*.js",
     "base": "templates",
     "i18n": "config:i18n"
