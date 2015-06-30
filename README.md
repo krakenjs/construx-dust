@@ -24,8 +24,7 @@ Where you configure your construx plugins:
   "template": {
     "module": "construx-dustjs",
     "files": "/templates/**/*.js",
-    "base": "templates",
-    "i18n": "config:i18n"
+    "base": "templates"
   }
 }
 ```
