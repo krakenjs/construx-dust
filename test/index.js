@@ -26,13 +26,13 @@ var test = require('tap').test,
   dust = Dust({}),
   fs = require('fs');
 
-test('construx-less', function (t) {
+test('construx-dustjs', function (t) {
 
-    t.test('processes a good star file', function (t) {
+    t.test('processes a good dustjs file', function (t) {
         t.plan(1);
         //get good star file
         fs.readFile(path.resolve(__dirname, 'templates/good.dust'), function (err, data) {
-            dust(data, {paths: '', context: {name: 'star.compiled'}}, function (err, compiled) {
+            dust(data, {paths: '', context: {name: 'good.js'}}, function (err, compiled) {
                 t.equal('(function(dust){dust.register("star.compiled",body_0);function body_0(chk,ctx){return chk.w("{good/}");}body_0.__dustBody=!0;return body_0}(dust));', compiled);
                 t.end();
             });
@@ -41,11 +41,11 @@ test('construx-less', function (t) {
 
     });
 
-    t.test('processes a bad star file', function (t) {
+    t.test('processes a bad dustjs file', function (t) {
         t.plan(1);
         //get bad star file
         fs.readFile(path.resolve(__dirname, 'templates/bad.dust'), function (err, data) {
-            dust(data, {paths: '', context: {name: 'star.compiled'}}, function (err, compiled) {
+            dust(data, {paths: '', context: {name: 'bad.js'}}, function (err, compiled) {
                 t.ok(err.name === 'SyntaxError');
                 t.end();
             });
