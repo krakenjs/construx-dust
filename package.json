@@ -1,6 +1,6 @@
 {
   "name": "construx-dustjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "DustJS compiler plugin for construx",
   "main": "index.js",
   "scripts": {
