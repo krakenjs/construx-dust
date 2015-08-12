@@ -33,7 +33,8 @@ test('construx-dustjs', function (t) {
         //get good star file
         fs.readFile(path.resolve(__dirname, 'templates/good.dust'), function (err, data) {
             dust(data, {paths: '', context: {name: 'good.js'}}, function (err, compiled) {
-                t.equal('(function(dust){dust.register("star.compiled",body_0);function body_0(chk,ctx){return chk.w("{good/}");}body_0.__dustBody=!0;return body_0}(dust));', compiled);
+                console.log(compiled);
+                t.equal('(function(dust){dust.register("good.js",body_0);function body_0(chk,ctx){return chk.w("{good/}");}body_0.__dustBody=!0;return body_0}(dust));', compiled);
                 t.end();
             });
 
