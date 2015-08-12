@@ -22,6 +22,7 @@ var lib = require('dustjs-linkedin');
 
 module.exports = function (options) {
 
+    lib.config = options.config || lib.config || {};
     options.ext = options.ext || 'dust';
 
 

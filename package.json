@@ -1,7 +1,7 @@
 {
   "name": "construx-dustjs",
-  "version": "0.0.1",
-  "description": "star compiler plugin for construx",
+  "version": "1.1.0",
+  "description": "DustJS compiler plugin for construx",
   "main": "index.js",
   "scripts": {
     "test": "tap test/*.js",
@@ -18,7 +18,7 @@
     "construx",
     "less"
   ],
-  "author": "star",
+  "author": "Matt Edelman <medelman@paypal.com>",
   "license": [
     {
       "type": "Apache 2.0",
