@@ -25,10 +25,17 @@ Where you configure your construx plugins:
   "template": {
     "module": "construx-dustjs",
     "files": "/templates/**/*.js",
-    "base": "templates"
+    "base": "templates",
+    "config": {
+        "prepend": "",
+        "append": "",
+        "amd": true
+    }
   }
 }
 ```
+
+`config` is optional but would be set to the dust module's "config" object, if desired.
 
 _Note: See [construx README](https://github.com/krakenjs/construx/blob/master/README.md) for general usage of construx_
 
