@@ -1,7 +1,5 @@
 # construx-dustjs
 
-Lead Maintainer: [Matt Edelman](https://github.com/grawk)
-
 [![Build Status](https://travis-ci.org/krakenjs/construx-dustjs.svg?branch=master)](https://travis-ci.org/krakenjs/construx-dustjs)
 [![NPM version](https://badge.fury.io/js/construx-dustjs.png)](http://badge.fury.io/js/construx-dustjs)
 
@@ -38,4 +36,3 @@ Where you configure your construx plugins:
 `config` is optional but would be set to the dust module's "config" object, if desired.
 
 _Note: See [construx README](https://github.com/krakenjs/construx/blob/master/README.md) for general usage of construx_
-
